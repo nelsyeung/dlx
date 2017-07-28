@@ -47,7 +47,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nelsyeung/algorithm-x.git"
+    "url": "https://github.com/nelsyeung/dlx.git"
   },
   "keywords": [
     "browser",
@@ -56,9 +56,9 @@
   "author": "Nelson Yeung",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nelsyeung/algorithm-x/issues"
+    "url": "https://github.com/nelsyeung/dlx/issues"
   },
-  "homepage": "https://github.com/nelsyeung/algorithm-x",
+  "homepage": "https://github.com/nelsyeung/dlx",
   "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^7.2.3",

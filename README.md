@@ -24,7 +24,7 @@ const matrix = [
   [0, 0, 0, 1, 1, 0, 1],
 ];
 
-const solution = dlx(matrix);
+const solution = dlx(matrix); // [4, 1, 5]
 ```
 
 ## License
