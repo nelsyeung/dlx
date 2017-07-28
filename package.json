@@ -1,0 +1,77 @@
+{
+  "name": "dlx",
+  "version": "0.1.0",
+  "description": "Knuth's Algorithm X using Dancing Links",
+  "main": "lib/dlx.js",
+  "scripts": {
+    "build": "npm run prettier && webpack && cross-env NODE_ENV=production webpack -p",
+    "lint": "npm run prettier && eslint .",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write src/**/*.js",
+    "start": "webpack --progress --color -w",
+    "test": "jest --coverage",
+    "test:watch": "jest --coverage --watch"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "extends": "airbnb-base",
+    "rules": {
+      "no-param-reassign": [
+        "error",
+        {
+          "props": false
+        }
+      ]
+    }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelsyeung/algorithm-x.git"
+  },
+  "keywords": [
+    "browser",
+    "library"
+  ],
+  "author": "Nelson Yeung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nelsyeung/algorithm-x/issues"
+  },
+  "homepage": "https://github.com/nelsyeung/algorithm-x",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^20.0.3",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^5.0.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-loader": "^1.8.0",
+    "eslint-plugin-import": "^2.3.0",
+    "jest": "^20.0.3",
+    "prettier": "^1.4.4",
+    "webpack": "^2.6.1"
+  }
+}
