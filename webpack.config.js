@@ -1,9 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
 
 const library = 'dlx';
 const outputFile =
   process.env.NODE_ENV === 'production' ? `${library}.min.js` : `${library}.js`;
-const plugins = [];
+const plugins = [new webpack.optimize.ModuleConcatenationPlugin()];
 
 module.exports = {
   entry: path.join(__dirname, 'src', `${library}.js`),
